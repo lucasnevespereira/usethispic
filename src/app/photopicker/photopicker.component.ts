@@ -7,9 +7,10 @@ import { PhotoService } from "../photo.service";
   styleUrls: ["./photopicker.component.css"],
 })
 export class PhotopickerComponent implements OnInit {
+  randomPic: string;
   constructor(private photoService: PhotoService) {
     this.photoService.getRandomPic().subscribe((response) => {
-      console.log(response);
+      this.randomPic = response.urls.regular;
     });
   }
 
