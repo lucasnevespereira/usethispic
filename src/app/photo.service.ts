@@ -24,5 +24,16 @@ export class PhotoService {
         },
       }
     );
+
+    // Approach with pluck operator
+
+    // return this.http
+    //   .get<UnsplashResponse>("https://api.unsplash.com/photos/random", {
+    //     headers: {
+    //       Authorization:
+    //         "Client-ID aJzHhll9D4yewxpPuc23jhoDD5AyTU2oFytVAb8WIvA",
+    //     },
+    //   })
+    //   .pipe(pluck("urls", "regular"));
   }
 }

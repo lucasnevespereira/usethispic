@@ -20,8 +20,11 @@ export class PhotopickerComponent implements OnInit {
 
   fetchPhoto() {
     this.photoService.getRandomPic().subscribe((response) => {
-      console.log(response.urls.regular);
       this.randomPic = response.urls.regular;
+
+      // Approach with pluck operator
+      // this.randomPic = response;
+      
     });
   }
 }
