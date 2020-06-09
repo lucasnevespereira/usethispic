@@ -9,3 +9,7 @@ body {
   font: 14px "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+body {
+  background-color: aliceblue;
+}

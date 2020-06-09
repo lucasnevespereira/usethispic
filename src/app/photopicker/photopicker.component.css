@@ -1,0 +1,47 @@
+.container {
+  padding: 0;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container img {
+  width: 100%;
+  box-shadow: lightslategray 4px 6px 6px;
+  object-fit: cover;
+}
+
+.container button {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  margin: 30px auto;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  max-height: 600px;
+  border: none;
+  background-color: #3369ff;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-align: center;
+  position: relative;
+}
+
+.container button:active {
+  top: 0.1em;
+}
+
+.container button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 30em) {
+   .container button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
