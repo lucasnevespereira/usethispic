@@ -1,5 +1,4 @@
 <div class="container">
-  <img [src]="randomPic" alt="randomPic" />
-
-  <button>I don't want to use this one</button>
+  <button (click)="onClick()">Get Random Pic</button>
+  <img *ngIf="randomPic" [src]="randomPic" alt="randomPic" />
 </div>
