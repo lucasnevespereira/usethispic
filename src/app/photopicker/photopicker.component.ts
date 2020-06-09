@@ -8,12 +8,20 @@ import { PhotoService } from "../photo.service";
 })
 export class PhotopickerComponent implements OnInit {
   randomPic: string;
-  constructor(private photoService: PhotoService) {
+  constructor(private photoService: PhotoService) {}
+
+  ngOnInit() {
+    this.fetchPhoto();
+  }
+
+  onClick() {
+    this.fetchPhoto();
+  }
+
+  fetchPhoto() {
     this.photoService.getRandomPic().subscribe((response) => {
       console.log(response.urls.regular);
       this.randomPic = response.urls.regular;
     });
   }
-
-  ngOnInit(): void {}
 }
