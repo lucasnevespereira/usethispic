@@ -8,7 +8,9 @@ import { PhotoService } from "../photo.service";
 })
 export class PhotopickerComponent implements OnInit {
   constructor(private photoService: PhotoService) {
-    this.photoService.getRandomPic().subscribe(() => {});
+    this.photoService.getRandomPic().subscribe((response) => {
+      console.log(response);
+    });
   }
 
   ngOnInit(): void {}
